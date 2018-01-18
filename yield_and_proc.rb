@@ -1,17 +1,37 @@
-# def greeting(block)
-#   puts "おはよう"
-#   text = block.call("こんにちは")
-#   puts text
-#   puts "こんばんは"
+# # # たのしいRuby proc参照
+# # hello = Proc.new do |name|
+# #   puts "私の名前は#{name}です"
+# # end
+
+# # hello_wata = proc do |name|
+# #   puts "私の名前は#{name}です"
+# # end
+
+# # hello.call("takumi")
+# # hello_wata.call("wata")
+
+
+# # family = proc do |*members |
+# #   members.map{ |n| puts "ようこそ#{n} さん"}
+# # end
+
+# # minna = ["takumi", "mirai", "karen"]
+# # family.call(members: minna)
+
+# # lamda
+# # taku = lambda do |a, b, c|
+# #   puts "#{a}: #{b}: #{c}"
+# # end
+
+# # taku.call("qq", "vv")
+
+
+# def power_of(n)
+#   lambda do |x|
+#     return x ** n
+#   end
 # end
 
-# repeat_proc = Proc { |text| text * 2 }
-# greeting(repeat_proc)
-
-# ->(a, b) { a+ b }
-# lamda{ |a, b| a+ b }
-
-
-# add_lamda = -> (a, b) { a.to_i +  b.to_i }
-
-# p add_lamda.call(10, 20, 40)
+# cube = power_of(5)
+# p cube
+# p cube.call(5)
